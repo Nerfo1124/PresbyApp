@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="20dp">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/svRestablecer">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <EditText
+                    android:layout_width="201dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtUserSearch"
+                    android:layout_weight="0.96"
+                    android:hint="Ingrese nombre de Usuario"
+                    android:layout_marginTop="35sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnBuscar"
+                    android:background="@android:drawable/ic_menu_search" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lblPreguntas"
+                    android:textIsSelectable="false"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10sp"
+                    android:textColor="#2c56c5"
+                    android:text="Responda las Siguientes preguntas."
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lblQuestUno"
+                    android:text="¿?"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:layout_marginTop="30sp"
+                    android:textColor="#e9b0da4f" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtAnswerUno"
+                    android:hint="Ingrese respuesta" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lblQuestDos"
+                    android:text="¿?"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10sp"
+                    android:textColor="#e9b0da4f" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtAnswerDos"
+                    android:hint="Ingrese respuesta" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Restablecer"
+                    android:id="@+id/btnRestablecerPass"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10sp" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtPassResUno"
+                    android:layout_marginTop="-220sp"
+                    android:visibility="invisible"
+                    android:hint="Ingrese nueva contraseña"
+                    android:inputType="textPassword" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtPassResDos"
+                    android:layout_marginTop="5sp"
+                    android:visibility="invisible"
+                    android:hint="Ingrese nuevamente la contraseña"
+                    android:inputType="textPassword" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Restablecer Contraseña"
+                    android:id="@+id/btnRestablecerPassOlv"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

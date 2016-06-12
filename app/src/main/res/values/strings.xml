@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">PresbyApp</string>
+    <string name="IS_TV_title">Inicio De Sesion</string>
+    <string name="IS_ET_nameuser">Nombre De Usuario</string>
+    <string name="IS_ET_password">Ingresar Contraseña</string>
+    <string name="IS_BU_forgetpass">¿Olvidaste tu contraseña?</string>
+    <string name="IS_BU_enter">Entrar</string>
+    <string name="IS_BU_signup">Registrarme</string>
+
+    <string name="RE_TV_title">Registro De Datos</string>
+    <string name="RE_ET_nameuser">Nombre para usuario</string>
+    <string name="RE_ET_yourname">Su nombre</string>
+    <string name="RE_ET_surname">Sus apellidos</string>
+    <string name="RE_ET_date">Seleccionar fecha nacimiento</string>
+    <string name="RE_TV_sex">Sexo:</string>
+    <string name="RE_RB_female">Femenino</string>
+    <string name="RE_RB_male">Masculino</string>
+    <string name="RE_ET_password">Digite una contraseña</string>
+    <string name="RE_ET_repeatpassword">Digite de nuevo la contraseña</string>
+    <string name="RE_TV_toselect">Seleccione una pregunta secreta</string>
+    <string name="RE_ET_answer">Ingrese la respuesta</string>
+    <string name="RE_TV_formula">¿Tiene Formula Medica?</string>
+    <string name="RE_RB_yes">SI</string>
+    <string name="RE_RB_no">NO</string>
+
+    <string name="AC_TV_des">Debe realizar la siguiente transicion por un minuto</string>
+    <string name="AC_BU_start">Comenzar</string>
+
+
+    <string-array name="letra">
+        <item>Tamaño de letra automatico</item>
+        <item>Tamaño de letra manual</item>
+    </string-array>
+    <string name="title_activity_seguimiento">Seguimiento</string>
+    <string name="title_activity_acercamiento">Acercamiento</string>
+</resources>

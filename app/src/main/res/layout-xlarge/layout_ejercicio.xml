@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="540sp"
+        android:layout_height="200sp"
+        android:maxHeight="16dp"
+        android:maxWidth="16dp"
+        android:scaleType="fitXY"
+        android:paddingRight="10dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10sp" />
+
+    <TextView
+        android:id="@+id/txtNameEjercicio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Titulo Ejercicio"
+        android:textSize="30sp"
+        android:layout_below="@+id/avatar"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/txtDescripcionExc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Descripcion"
+        android:textSize="24sp"
+        android:layout_below="@+id/txtNameEjercicio"
+        android:gravity="center" />
+
+</LinearLayout>
