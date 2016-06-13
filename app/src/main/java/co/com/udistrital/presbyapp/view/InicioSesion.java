@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -47,8 +48,8 @@ public class InicioSesion extends AppCompatActivity {
         Log.d(TAG_LOG, "Iniciando vista principal de la aplicacion.");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio_sesion);
-        getSupportActionBar().setTitle("Inicio Sesion");
-        //getSupportActionBar().setIcon(R.drawable.icono_home);
+        getSupportActionBar().setTitle("\t\tPresbyApp");
+        //getSupportActionBar().setIcon(R.mipmap.ic_launcher);
         txtUsuario = (EditText) findViewById(R.id.txtUserSesion);
         txtPassword = (EditText) findViewById(R.id.txtPassSesion);
         try{
@@ -71,6 +72,17 @@ public class InicioSesion extends AppCompatActivity {
         return true;
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.action_settings) {
+            Intent intent = new Intent(this, AcercaD.class);
+            startActivity(intent);
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
     /**
      * <b>Descripcion: </b> Metodo para iniciar la Actividad de Registro.
      *

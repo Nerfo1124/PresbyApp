@@ -272,7 +272,7 @@ public class Principal extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_inicio, menu);
     return true;
-}
+    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
