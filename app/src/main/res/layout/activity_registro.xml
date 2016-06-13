@@ -147,8 +147,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:hint="Digite una contraseña"
-                                android:inputType="textPassword"
-                                android:text="123456" />
+                                android:inputType="textPassword" />
 
                             <EditText
                                 android:id="@+id/txtPasswordDosR1"
@@ -156,8 +155,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:hint="Digite de nuevo la contraseña"
-                                android:inputType="textPassword"
-                                android:text="123456" />
+                                android:inputType="textPassword" />
 
                             <Spinner
                                 android:id="@+id/selectorUnoR1"

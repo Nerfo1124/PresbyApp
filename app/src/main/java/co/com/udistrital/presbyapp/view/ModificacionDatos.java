@@ -417,7 +417,13 @@ public class ModificacionDatos extends AppCompatActivity implements SeekBar.OnSe
         objS=objBD.consult(idUsuario);
         fre.setValue(objS.getFrecuencia());
         seekBar.setProgress((int)objS.getTamanoFuente());
-
+        try {
+            int s=Settings.System.getInt(getBaseContext().getContentResolver(), Settings.System.SCREEN_BRIGHTNESS);
+            Toast.makeText(this,"Valor b:"+s,Toast.LENGTH_LONG).show();
+            brillo.setProgress(s);
+        } catch (Settings.SettingNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     public void guardar(View v){
