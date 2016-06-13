@@ -11,7 +11,7 @@ import android.util.Log;
  */
 public class DataBaseHelper extends SQLiteOpenHelper {
 
-    private static String TAG_LOG = "[Sin_nombre]";
+    private static String TAG_LOG = "[PresbyApp]";
 
     // ========================================================
     //Tabla de Formula
@@ -124,6 +124,15 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                     + HISTORICO_TIEMPO + " text not null, "
                     + HISTORICO_FECHA + " text not null "
                     + " ) ";
+
+    private static final String INSERT_HISTORICO_1 = "INSERT INTO HISTORICO_USO_DISPOSITIVO(his_id_user , his_tiempo_uso , his_fecha_registro) VALUES (1,'2:45:01','2016-06-4')";
+    private static final String INSERT_HISTORICO_2 = "INSERT INTO HISTORICO_USO_DISPOSITIVO(his_id_user , his_tiempo_uso , his_fecha_registro) VALUES (1,'2:03:01','2016-06-5')";
+    private static final String INSERT_HISTORICO_3 = "INSERT INTO HISTORICO_USO_DISPOSITIVO(his_id_user , his_tiempo_uso , his_fecha_registro) VALUES (1,'3:32:01','2016-06-6')";
+    private static final String INSERT_HISTORICO_4 = "INSERT INTO HISTORICO_USO_DISPOSITIVO(his_id_user , his_tiempo_uso , his_fecha_registro) VALUES (1,'5:23:01','2016-06-7')";
+    private static final String INSERT_HISTORICO_5 = "INSERT INTO HISTORICO_USO_DISPOSITIVO(his_id_user , his_tiempo_uso , his_fecha_registro) VALUES (1,'1:54:01','2016-06-8')";
+    private static final String INSERT_HISTORICO_6 = "INSERT INTO HISTORICO_USO_DISPOSITIVO(his_id_user , his_tiempo_uso , his_fecha_registro) VALUES (1,'4:12:01','2016-06-9')";
+    private static final String INSERT_HISTORICO_7 = "INSERT INTO HISTORICO_USO_DISPOSITIVO(his_id_user , his_tiempo_uso , his_fecha_registro) VALUES (1,'5:08:01','2016-06-10')";
+    private static final String INSERT_HISTORICO_8 = "INSERT INTO HISTORICO_USO_DISPOSITIVO(his_id_user , his_tiempo_uso , his_fecha_registro) VALUES (1,'3:32:01','2016-06-11')";
 
     // ========================================================
     // Tabla de Ejercicios
@@ -244,10 +253,14 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         db.execSQL(INSERT_EXCERSICE_4);
         db.execSQL(INSERT_EXCERSICE_5);
         db.execSQL(INSERT_EXCERSICE_6);
-        //db.execSQL(INSERT_EXCERSICE_7);
-        //db.execSQL(INSERT_EXCERSICE_8);
-        //db.execSQL(INSERT_EXCERSICE_9);
-        //db.execSQL(INSERT_EXCERSICE_10);
+        db.execSQL(INSERT_HISTORICO_1);
+        db.execSQL(INSERT_HISTORICO_2);
+        db.execSQL(INSERT_HISTORICO_3);
+        db.execSQL(INSERT_HISTORICO_4);
+        db.execSQL(INSERT_HISTORICO_5);
+        db.execSQL(INSERT_HISTORICO_6);
+        db.execSQL(INSERT_HISTORICO_7);
+        db.execSQL(INSERT_HISTORICO_8);
         db.execSQL(CREATE_TABLE_HISTORICO_EX);
         Log.d(TAG_LOG, "[DataBaseHelper] SQL: " + CREATE_TABLE_HISTORICO_EX);
         db.execSQL(CREATE_TABLE_HISTORICO_LETRA_FREC);
