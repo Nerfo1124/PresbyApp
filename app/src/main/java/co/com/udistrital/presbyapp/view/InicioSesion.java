@@ -48,7 +48,7 @@ public class InicioSesion extends AppCompatActivity {
         Log.d(TAG_LOG, "Iniciando vista principal de la aplicacion.");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio_sesion);
-        getSupportActionBar().setTitle("\t\tPresbyApp");
+        getSupportActionBar().setTitle("PresbyApp");
         //getSupportActionBar().setIcon(R.mipmap.ic_launcher);
         txtUsuario = (EditText) findViewById(R.id.txtUserSesion);
         txtPassword = (EditText) findViewById(R.id.txtPassSesion);
